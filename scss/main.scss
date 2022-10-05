@@ -1,58 +1,16 @@
 @import "variables";
+@import "tipografia";
+@import "layout";
 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Aboreto', cursive;
 }
 
 /* layout */
 
-html,
-body {
-    height: 100%;
-}
-
-body {
-    background-image: url(../assets/images/wallPrincipal.jpeg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    display: grid;
-    grid-template-areas:
-        "header"
-        "article"
-        "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 100px auto 100px;
-}
-
-header {
-    background-color: $color_primario;
-    grid-area: header;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 1%;
-    padding-left: 1%;
-}
-
-article {
-    grid-area: article;
-}
-
-footer {
-    background-color: $color_primario;
-    grid-area: footer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $color_secundario;
-}
 
 li {
     list-style: none;
@@ -164,7 +122,7 @@ h2 {
 }
 
 .contacto__formulario {
-    background-color: #121212;
+    background-color: $color_primario;
     color: $color_secundario;
     padding: 10px;
     border-radius: 5px;
@@ -220,7 +178,7 @@ nav ul li a:hover {
 }
 
 nav ul li a:active {
-    background-color: #121212;
+    background-color: $color_primario;
     color: $color_secundario;
 }
 
@@ -278,7 +236,7 @@ nav ul li a:active {
     }
 
     .sobreNosotros__imagen {
-        border: #121212 10px solid;
+        border: $color_primario 10px solid;
         border-radius: 20px;
         width: 100%;
     }
