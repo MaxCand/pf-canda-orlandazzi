@@ -1,9 +1,8 @@
-html {
-  font-family: 'Aboreto', cursive; }
-
+/* Layout */
 html,
 body {
-  height: 100%; }
+  height: 100%;
+  font-family: "Aboreto", cursive; }
 
 body {
   background-image: url(../assets/images/wallPrincipal.jpeg);

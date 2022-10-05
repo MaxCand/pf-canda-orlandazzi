@@ -1,4 +1,8 @@
-$color_primario: rgb(18, 18, 18);
-$color_secundario: white;
-$color_terciario: wheat;
-$ancho_total: "widht:100%";
+$tipografia_principal: 'Aboreto', cursive;
+
+$colores: (
+"color_primario": rgb(18, 18, 18),
+"color_secundario": white,
+"color_terciario": wheat,
+"fondo_opaco": rgba(0, 0, 0, 0.5),
+);
