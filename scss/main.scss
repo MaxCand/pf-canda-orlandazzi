@@ -1,6 +1,8 @@
 @import "variables";
 @import "tipografia";
 @import "layout";
+@import "mixins";
+
 
 
 * {
@@ -11,7 +13,7 @@
 
 li {
     list-style: none;
-    display: inline;
+    display: inline; 
 }
 
 .header__menu__boton {
@@ -63,10 +65,9 @@ h2 {
 }
 
 .galeria__imagen {
-    width: 350px;
-    height: 320px;
+    @include sizes(350px, 320px);
     transition: transform .2s;
-    border: #121212 10px solid;
+    border: $color_primario 10px solid;
     border-radius: 20px;
 }
 
@@ -77,15 +78,14 @@ h2 {
 /* Proximas fechas */
 
 .proximasFechas__fechas {
-    background-color: #121212;
+    background-color: $color_primario;
     color: $color_secundario;
     text-align: center;
     padding: 3%;
     border: 2px solid $color_secundario;
     border-radius: 10px;
     font-size: 25px;
-    width: 50%;
-    height: 50%;
+    @include sizes(50%, 50%);
     margin-top: 4%;
 }
 
@@ -146,7 +146,7 @@ h2 {
 
 .sobreNosotros__historia {
     width: 60%;
-    background-color: #121212;
+    background-color: $color_primario;
     color: $color_secundario;
     text-align: center;
     font-size: 25px;
@@ -269,22 +269,19 @@ nav ul li a:active {
     }
  
     .contenedor__galeria {
+        @include sizes(100%, auto);
         display: flex;
-        width: 100%;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
         max-width: 80%;
         margin-bottom: 2%;
         margin-left: 8%;
-        height: 100%;
         margin-top: 4%;
-        height: auto;
     }
     
     .galeria__imagen {
-        width: 100%;
-        height: auto;
+        @include sizes(100%, auto);
         transition: transform .2s;
         border: #121212 10px solid;
         border-radius: 20px;
