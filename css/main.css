@@ -51,6 +51,10 @@ li {
   color: wheat;
   transition: transform .2s; }
 
+.header__logo {
+  height: 80px;
+  width: 130px; }
+
 /* Titulos */
 h1 {
   color: black;
@@ -260,4 +264,7 @@ nav ul li a:active {
     border-radius: 20px;
     margin-bottom: 10px; }
   .proximasFechas__entradas {
-    display: flex; } }
+    display: flex; }
+  .header__logo {
+    height: 50px;
+    width: 80px; } }

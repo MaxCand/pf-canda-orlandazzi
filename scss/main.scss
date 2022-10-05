@@ -23,6 +23,10 @@ li {
     transition: transform .2s;
 }
 
+.header__logo {
+    @include sizes(130px, 80px);  
+} 
+
 /* Titulos */
 
 h1 {
@@ -291,5 +295,9 @@ nav ul li a:active {
     .proximasFechas__entradas {
         display: flex;
     }
+
+    .header__logo {
+        @include sizes(80px, 50px);  
+    } 
     
 }
