@@ -2,8 +2,7 @@
 @import "layout";
 @import "mixins";
 @import "nav";
-
-
+@import "animaciones";
 
 * {
     margin: 0;
@@ -19,7 +18,7 @@ li {
 /* Titulos */
 
 h1 {
-    color: rgba(0, 0, 0, 1);
+    color: map-get($map: $colores, $key: "color_primario");
     font-size: 45px;
     border: 1px black solid;
     border-radius: 5px;
@@ -46,10 +45,10 @@ h2 {
 
 .contenedor__galeria {
     display: flex;
-    width: 100%;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
     max-width: 80%;
     margin-bottom: 2%;
     margin-left: 8%;
@@ -160,7 +159,7 @@ h2 {
 }
 
 .sobreNosotros__imagen {
-    border: #121212 10px solid;
+    border: map-get($map: $colores, $key: "color_primario") 10px solid;
     border-radius: 20px;
     transition: transform .2s;
 
@@ -230,7 +229,7 @@ h2 {
     .galeria__imagen {
         @include sizes(100%, auto);
         transition: transform .2s;
-        border: #121212 10px solid;
+        border: map-get($map: $colores, $key: "color_primario") 10px solid;
         border-radius: 20px;
         margin-bottom: 10px;
     }

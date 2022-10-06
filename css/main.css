@@ -58,6 +58,23 @@ nav ul li a:hover {
   height: 80px;
   width: 130px; }
 
+/* Animaciones */
+@keyframes efectoTitulo {
+  0% {
+    background-color: rgba(245, 222, 179, 0.5); }
+  50% {
+    background-color: wheat; }
+  100% {
+    background-color: rgba(245, 222, 179, 0.5); } }
+
+@keyframes efectoEntradas {
+  0% {
+    background-color: rgba(0, 0, 0, 0.5); }
+  50% {
+    background-color: #9c2222; }
+  100% {
+    background-color: rgba(0, 0, 0, 0.5); } }
+
 * {
   margin: 0;
   padding: 0;
@@ -69,7 +86,7 @@ li {
 
 /* Titulos */
 h1 {
-  color: black;
+  color: #121212;
   font-size: 45px;
   border: 1px black solid;
   border-radius: 5px;
@@ -93,10 +110,10 @@ h2 {
 /* Galeria */
 .contenedor__galeria {
   display: flex;
-  width: 100%;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
   max-width: 80%;
   margin-bottom: 2%;
   margin-left: 8%;
