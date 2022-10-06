@@ -1,0 +1,29 @@
+/* Animaciones */
+
+@keyframes efectoTitulo {
+    0% {
+        background-color: rgba(245, 222, 179, 0.5)
+    }
+
+    50% {
+        background-color: rgba(245, 222, 179, 1)
+    }
+
+    100% {
+        background-color: rgba(245, 222, 179, 0.5)
+    }
+}
+
+@keyframes efectoEntradas {
+    0% {
+        background-color: rgba(0, 0, 0, 0.5)
+    }
+
+    50% {
+        background-color: rgb(156, 34, 34)
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, 0.5)
+    }
+}

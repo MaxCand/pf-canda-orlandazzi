@@ -36,14 +36,17 @@ footer {
   align-items: center;
   color: white; }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-li {
-  list-style: none;
-  display: inline; }
+/* nav */
+nav ul li a:hover {
+  background-color: gray;
+  border-radius: 4px;
+  transition: background-color 100ms;
+  color: white;
+  font-size: 20px;
+  transition: all 500ms; }
+  nav ul li a:hover:active {
+    background-color: #121212;
+    color: white; }
 
 .header__menu__boton {
   text-decoration: none;
@@ -54,6 +57,15 @@ li {
 .header__logo {
   height: 80px;
   width: 130px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+li {
+  list-style: none;
+  display: inline; }
 
 /* Titulos */
 h1 {
@@ -97,6 +109,8 @@ h2 {
   transition: transform .2s;
   border: #121212 10px solid;
   border-radius: 20px; }
+  .galeria__imagen:hover {
+    transform: scale(1.4); }
 
 .seccionGaleria {
   margin-bottom: 16%; }
@@ -127,6 +141,9 @@ h2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
+  .proximasFechas__entradas:hover {
+    font-size: 30px;
+    transition: all 500ms; }
 
 .listaDeFechas {
   display: flex;
@@ -176,46 +193,8 @@ h2 {
   border: #121212 10px solid;
   border-radius: 20px;
   transition: transform .2s; }
-
-/* Pseudoclases */
-nav ul li a:hover {
-  background-color: gray;
-  border-radius: 4px;
-  transition: background-color 100ms;
-  color: white;
-  font-size: 20px;
-  transition: all 500ms; }
-
-nav ul li a:active {
-  background-color: #121212;
-  color: white; }
-
-.sobreNosotros__imagen:hover {
-  transform: scale(1.2); }
-
-.galeria__imagen:hover {
-  transform: scale(1.4); }
-
-.proximasFechas__entradas:hover {
-  font-size: 30px;
-  transition: all 500ms; }
-
-/* Animaciones */
-@keyframes efectoTitulo {
-  0% {
-    background-color: rgba(245, 222, 179, 0.5); }
-  50% {
-    background-color: wheat; }
-  100% {
-    background-color: rgba(245, 222, 179, 0.5); } }
-
-@keyframes efectoEntradas {
-  0% {
-    background-color: rgba(0, 0, 0, 0.5); }
-  50% {
-    background-color: #9c2222; }
-  100% {
-    background-color: rgba(0, 0, 0, 0.5); } }
+  .sobreNosotros__imagen:hover {
+    transform: scale(1.2); }
 
 /* Media queries */
 @media screen and (max-width: 480px) {
@@ -238,7 +217,7 @@ nav ul li a:active {
     display: flex;
     flex-direction: column;
     padding: 5px;
-    margin-top: 25  px; }
+    margin-top: 25 px; }
   .header__menu__boton {
     display: flex;
     justify-content: center;
