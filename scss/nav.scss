@@ -5,9 +5,10 @@ nav ul li a:hover {
     border-radius: 4px;
     transition: background-color 100ms;
     color: map-get($map: $colores, $key: "color_secundario");
-    font-size:20px;
+    font-size: 20px;
     transition: all 500ms;
-        &:active {
+
+    &:active {
         background-color: map-get($map: $colores, $key: "color_primario");
         color: map-get($map: $colores, $key: "color_secundario");
     }
@@ -21,5 +22,5 @@ nav ul li a:hover {
 }
 
 .header__logo {
-    @include sizes(130px, 80px);  
-} 
+    @include sizes(130px, 80px);
+}
