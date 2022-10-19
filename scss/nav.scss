@@ -1,19 +1,5 @@
 /* nav */
 
-nav ul li a:hover {
-    background-color: gray;
-    border-radius: 4px;
-    transition: background-color 100ms;
-    color: map-get($map: $colores, $key: "color_secundario");
-    font-size: 20px;
-    transition: all 500ms;
-
-    &:active {
-        background-color: map-get($map: $colores, $key: "color_primario");
-        color: map-get($map: $colores, $key: "color_secundario");
-    }
-}
-
 .header__menu__boton {
     text-decoration: none;
     padding: 3px;
