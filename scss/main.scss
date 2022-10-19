@@ -183,6 +183,13 @@ h2 {
 
 /* Media queries */
 
+@media (hover: hover) {
+.proximasFechas__entradas:hover {
+        font-size: 30px;
+        transition: all 500ms;
+    }
+}
+
 @media screen and (max-width:480px) {
 
     .contacto__formulario {
