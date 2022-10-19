@@ -239,7 +239,7 @@ h2 {
     width: 100%; }
   body {
     grid-template-columns: 100%;
-    grid-template-rows: 200px auto 100px; }
+    grid-template-rows: 220px auto 100px; }
   header {
     display: flex;
     flex-direction: column;
@@ -271,5 +271,5 @@ h2 {
   .proximasFechas__entradas {
     display: flex; }
   .header__logo {
-    height: 56px;
-    width: 108px; } }
+    height: 72px;
+    width: 135px; } }

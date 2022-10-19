@@ -224,7 +224,7 @@ h2 {
 
     body {
         grid-template-columns: 100%;
-        grid-template-rows: 200px auto 100px;
+        grid-template-rows: 220px auto 100px;
     }
 
     header {
@@ -268,7 +268,7 @@ h2 {
     }
 
     .header__logo {
-        @include sizes(108px, 56px);
+        @include sizes(135px, 72px);
     }
 
 }
