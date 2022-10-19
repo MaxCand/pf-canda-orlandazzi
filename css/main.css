@@ -80,7 +80,7 @@ nav ul li a:hover {
   padding: 0;
   box-sizing: border-box; }
 
-li {
+nav ul li {
   list-style: none;
   display: inline; }
 
@@ -145,6 +145,10 @@ h2 {
   width: 50%;
   margin-top: 4%; }
 
+.proximasFechas__fechas ul li {
+  list-style: none;
+  padding: 1%; }
+
 .proximasFechas__entradas {
   text-decoration: none;
   color: white;
@@ -157,7 +161,8 @@ h2 {
   animation-delay: 0;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  align-items: center; }
   .proximasFechas__entradas:hover {
     font-size: 30px;
     transition: all 500ms; }
