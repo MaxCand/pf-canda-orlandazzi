@@ -205,7 +205,7 @@ h2 {
   transition: transform .2s; }
 
 /* Media queries */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1023px) {
   .proximasFechas__entradas:hover {
     font-size: 30px;
     transition: all 500ms; }
