@@ -149,6 +149,9 @@ h2 {
   list-style: none;
   padding: 1%; }
 
+.proximasFechas__fechas div {
+  margin-top: 1%; }
+
 .proximasFechas__entradas {
   text-decoration: none;
   color: white;
@@ -169,7 +172,8 @@ h2 {
 
 .listaDeFechas {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding-bottom: 1%; }
 
 /* Contacto */
 .contacto__redes {

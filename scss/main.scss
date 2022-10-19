@@ -92,6 +92,10 @@ h2 {
     padding: 1%;
 }
 
+.proximasFechas__fechas div {
+    margin-top: 1%;
+}
+
 .proximasFechas__entradas {
     text-decoration: none;
     color: map-get($map: $colores, $key: "color_secundario");
@@ -116,6 +120,7 @@ h2 {
 .listaDeFechas {
     display: flex;
     justify-content: center;
+    padding-bottom: 1%;
 }
 
 /* Contacto */
