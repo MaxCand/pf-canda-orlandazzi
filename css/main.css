@@ -261,6 +261,8 @@ nav ul li a:hover {
     width: 100%;
     font-size: 22px;
     margin-bottom: 2%; }
+  .mensajeFormulario {
+    width: 100%; }
   .sobreNosotros__imagen {
     border: #121212 10px solid;
     border-radius: 20px;
