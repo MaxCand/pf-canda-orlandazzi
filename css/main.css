@@ -177,6 +177,21 @@ h2 {
   justify-content: center;
   margin-top: 6%; }
 
+/* Mensaje formulario */
+.mensajeFormulario {
+  background-color: #121212;
+  color: white;
+  text-align: center;
+  padding: 3%;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: 25px;
+  height: 50%;
+  width: 50%;
+  margin-top: 4%;
+  display: flex;
+  align-items: center; }
+
 /* Sobre nosotros */
 .sobreNosotros__contenido {
   display: flex;
@@ -220,24 +235,26 @@ h2 {
   margin-bottom: 1%; }
 
 /* Media queries */
-@media screen and (min-width: 1023px) {
-  .proximasFechas__entradas:hover {
-    font-size: 30px;
-    transition: all 500ms; }
-  .galeria__imagen:hover {
-    transform: scale(1.4); }
-  .sobreNosotros__imagen:hover {
-    transform: scale(1.2); }
-  nav ul li a:hover {
-    background-color: gray;
-    border-radius: 4px;
-    transition: background-color 100ms;
-    color: white;
-    font-size: 20px;
-    transition: all 500ms; }
-    nav ul li a:hover:active {
-      background-color: #121212;
-      color: white; } }
+.proximasFechas__entradas:hover {
+  font-size: 30px;
+  transition: all 500ms; }
+
+.galeria__imagen:hover {
+  transform: scale(1.4); }
+
+.sobreNosotros__imagen:hover {
+  transform: scale(1.2); }
+
+nav ul li a:hover {
+  background-color: gray;
+  border-radius: 4px;
+  transition: background-color 100ms;
+  color: white;
+  font-size: 20px;
+  transition: all 500ms; }
+  nav ul li a:hover:active {
+    background-color: #121212;
+    color: white; }
 
 @media screen and (max-width: 480px) {
   .contacto__formulario {
@@ -292,3 +309,10 @@ h2 {
   .header__logo {
     height: 72px;
     width: 135px; } }
+
+.marginBt-1 {
+  margin-bottom: 2%; }
+
+.flex-jc-center {
+  display: flex;
+  justify-content: center; }

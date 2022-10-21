@@ -135,6 +135,22 @@ h2 {
     margin-top: 6%;
 }
 
+/* Mensaje formulario */
+
+.mensajeFormulario {
+        background-color: map-get($map: $colores, $key: "color_primario");
+        color: map-get($map: $colores, $key: "color_secundario");
+        text-align: center;
+        padding: 3%;
+        border: 2px solid map-get($map: $colores, $key: "color_secundario");
+        border-radius: 10px;
+        font-size: 25px;
+        @include sizes(50%, 50%);
+        margin-top: 4%;
+        display: flex;
+       align-items: center;
+}
+
 /* Sobre nosotros */
 
 .sobreNosotros__contenido {
@@ -188,6 +204,8 @@ h2 {
 
 @media screen and (min-width:1023px) {
 
+    }
+
     .proximasFechas__entradas:hover {
         font-size: 30px;
         transition: all 500ms;
@@ -214,7 +232,6 @@ h2 {
             color: map-get($map: $colores, $key: "color_secundario");
         }
     }
-}
 
 @media screen and (max-width:480px) {
 
@@ -293,4 +310,13 @@ h2 {
         @include sizes(135px, 72px);
     }
 
+}
+
+.marginBt-1 {
+    margin-bottom: 2%;
+}
+
+.flex-jc-center {
+    display: flex;
+    justify-content: center;
 }
