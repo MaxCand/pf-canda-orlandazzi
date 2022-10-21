@@ -1,5 +1,5 @@
 {
-  "name": "pre-entrega3-canda-orlandazzi",
+  "name": "pf-canda-orlandazzi",
   "version": "1.0.0",
   "description": "Pagina de the blues, tributo a guns and roses",
   "main": "index.js",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaxCand/pre-entrega3-canda-orlandazzi.git"
+    "url": "git+https://github.com/MaxCand/pf-canda-orlandazzi.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MaxCand/pre-entrega3-canda-orlandazzi/issues"
+    "url": "https://github.com/MaxCand/pf-canda-orlandazzi/issues"
   },
-  "homepage": "https://github.com/MaxCand/pre-entrega3-canda-orlandazzi#readme",
+  "homepage": "https://github.com/MaxCand/pf-canda-orlandazzi#readme",
   "devDependencies": {
     "node-sass": "^7.0.3",
     "nodemon": "^2.0.20"
