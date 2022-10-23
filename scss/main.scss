@@ -218,7 +218,7 @@ h2 {
 }
 
 nav ul li a:hover {
-    background-color: gray;
+    background-color: map-get($map: $colores, $key: "color_nav_hover");
     border-radius: 4px;
     transition: background-color 100ms;
     color: map-get($map: $colores, $key: "color_secundario");
