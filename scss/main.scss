@@ -254,15 +254,9 @@ h2 {
         width: 100%;
     }
 
-    .proximasFechas__fechas {
-        width: 100%;
-    }
-
     body {
         grid-template-columns: 100%;
         grid-template-rows: 220px auto 100px;
-        background-image: url(../assets/images/fondo-mobile.jpg);
-
     }
 
     header {
@@ -307,9 +301,13 @@ h2 {
         margin-bottom: 3%;
     }
 
-    .proximasFechas__entradas {
-        display: flex;
-    }
+    // .proximasFechas__entradas {
+    //     display: flex;
+    // }
+
+    // .proximasFechas__fechas {
+    //     width: 100%;
+    // }
 
     .header__logo {
         @include sizes(135px, 72px);
