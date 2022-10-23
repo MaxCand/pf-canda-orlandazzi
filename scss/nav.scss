@@ -1,5 +1,10 @@
 /* nav */
 
+nav ul li {
+    list-style: none;
+    display: inline;
+}
+
 .header__menu__boton {
     text-decoration: none;
     padding: 3px;

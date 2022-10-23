@@ -10,12 +10,7 @@
     box-sizing: border-box;
 }
 
-nav ul li {
-    list-style: none;
-    display: inline;
-}
-
-/* Titulos */
+/* Encabezados */
 
 h1 {
     color: map-get($map: $colores, $key: "color_primario");
@@ -301,13 +296,13 @@ h2 {
         margin-bottom: 3%;
     }
 
-    // .proximasFechas__entradas {
-    //     display: flex;
-    // }
+    .proximasFechas__entradas {
+        display: flex;
+    }
 
-    // .proximasFechas__fechas {
-    //     width: 100%;
-    // }
+    .proximasFechas__fechas {
+        width: 100%;
+    }
 
     .header__logo {
         @include sizes(135px, 72px);
@@ -315,7 +310,7 @@ h2 {
 
 }
 
-.marginBt-1 {
+.marginBt-2 {
     margin-bottom: 2%;
 }
 

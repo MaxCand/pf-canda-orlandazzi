@@ -37,6 +37,10 @@ footer {
   color: white; }
 
 /* nav */
+nav ul li {
+  list-style: none;
+  display: inline; }
+
 .header__menu__boton {
   text-decoration: none;
   padding: 3px;
@@ -69,11 +73,7 @@ footer {
   padding: 0;
   box-sizing: border-box; }
 
-nav ul li {
-  list-style: none;
-  display: inline; }
-
-/* Titulos */
+/* Encabezados */
 h1 {
   color: #121212;
   font-size: 45px;
@@ -302,11 +302,15 @@ h2 {
     width: 35%;
     padding: 2%;
     margin-bottom: 3%; }
+  .proximasFechas__entradas {
+    display: flex; }
+  .proximasFechas__fechas {
+    width: 100%; }
   .header__logo {
     height: 72px;
     width: 135px; } }
 
-.marginBt-1 {
+.marginBt-2 {
   margin-bottom: 2%; }
 
 .flex-jc-center {
