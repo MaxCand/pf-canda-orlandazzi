@@ -230,20 +230,14 @@ h2 {
 @media screen and (max-width:480px) {
 
     body {
-        background-image: url(../assets/images/wallPrincipal.jpeg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center center;
+        background-attachment:fixed;
+        background-size:cover;
+        background-position: top center;
         width: 100%;
-        display: grid;
-        grid-template-areas:
-            "header"
-            "article"
-            "footer";
+        max-height: fit-content;
         grid-template-columns: 100%;
-        grid-template-rows: 25% auto 10%;
-    } 
+        grid-template-rows: 220px auto 100px;
+    }
 
     .contacto__formulario {
         width: 100%;
@@ -319,7 +313,7 @@ h2 {
 
     .proximasFechas__fechas {
         width: 100%;
-        }
+    }
 
     .header__logo {
         @include sizes(135px, 72px);
