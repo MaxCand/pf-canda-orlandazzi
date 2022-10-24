@@ -18,7 +18,6 @@ h1 {
     border: 1px black solid;
     border-radius: 5px;
     text-align: center;
-    margin-top: 1%;
     background-color: map-get($map: $colores, $key: "color_terciario");
     animation-name: efectoTitulo;
     animation-iteration-count: infinite;
@@ -237,7 +236,7 @@ h2 {
     .contacto__formulario {
         width: 100%;
         font-size: 22px;
-        margin-bottom: 2%;
+        // margin-bottom: 2%;
     }
 
     .mensajeFormulario {

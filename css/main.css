@@ -80,7 +80,6 @@ h1 {
   border: 1px black solid;
   border-radius: 5px;
   text-align: center;
-  margin-top: 1%;
   background-color: wheat;
   animation-name: efectoTitulo;
   animation-iteration-count: infinite;
@@ -260,8 +259,7 @@ h2 {
     grid-template-rows: 220px auto 100px; }
   .contacto__formulario {
     width: 100%;
-    font-size: 22px;
-    margin-bottom: 2%; }
+    font-size: 22px; }
   .mensajeFormulario {
     width: 100%; }
   .sobreNosotros__imagen {
