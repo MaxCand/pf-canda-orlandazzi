@@ -304,7 +304,7 @@ h2 {
     margin-bottom: 3%; }
   .proximasFechas__entradas {
     display: flex;
-    width: 100%; }
+    max-width: 100%; }
   .proximasFechas__fechas {
     width: 100%; }
   .header__logo {
