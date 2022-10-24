@@ -306,7 +306,8 @@ h2 {
     display: flex;
     max-width: 100%; }
   .proximasFechas__fechas {
-    width: 100%; }
+    width: 100%;
+    z-index: 1; }
   .header__logo {
     height: 72px;
     width: 135px; } }
