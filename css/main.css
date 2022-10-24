@@ -52,21 +52,29 @@ nav ul li {
   width: 130px; }
 
 /* Animaciones */
-@keyframes efectoTitulo {
+@keyframes opacidad {
   0% {
-    background-color: rgba(245, 222, 179, 0.5); }
+    opacity: 0.7; }
   50% {
-    background-color: wheat; }
+    opacity: 1; }
   100% {
-    background-color: rgba(245, 222, 179, 0.5); } }
+    opacity: 0.7; } }
 
-@keyframes efectoEntradas {
+@keyframes efectoTexto {
   0% {
     background-color: rgba(0, 0, 0, 0.5); }
   50% {
     background-color: #9c2222; }
   100% {
     background-color: rgba(0, 0, 0, 0.5); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.5; }
+  50% {
+    opacity: 0.7; }
+  100% {
+    opacity: 1; } }
 
 * {
   margin: 0;
@@ -75,14 +83,14 @@ nav ul li {
 
 /* Encabezados */
 h1 {
-  color: #121212;
+  color: white;
   font-size: 45px;
   border: 1px black solid;
   border-radius: 5px;
   text-align: center;
   margin-top: 1%;
-  background-color: wheat;
-  animation-name: efectoTitulo;
+  background-color: #505055;
+  animation-name: opacidad;
   animation-iteration-count: infinite;
   animation-duration: 3s; }
 
@@ -144,7 +152,7 @@ h2 {
   border-radius: 5px;
   border: 2px solid white;
   padding: 2%;
-  animation-name: efectoEntradas;
+  animation-name: efectoTexto;
   animation-iteration-count: infinite;
   animation-duration: 1s;
   display: flex;
@@ -258,6 +266,9 @@ h2 {
   body {
     grid-template-columns: 100%;
     grid-template-rows: 220px auto 100px; }
+  h1 {
+    animation-name: opacidad;
+    animation-duration: 2s; }
   .contacto__formulario {
     width: 100%;
     font-size: 22px;
@@ -304,7 +315,9 @@ h2 {
     margin-bottom: 3%; }
   .proximasFechas__entradas {
     display: flex;
-    max-width: 100%; }
+    max-width: 100%;
+    animation-name: none;
+    background-color: rgba(128, 21, 21, 0.552); }
   .proximasFechas__fechas {
     width: 100%; }
   .header__logo {

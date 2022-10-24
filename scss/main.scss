@@ -13,14 +13,14 @@
 /* Encabezados */
 
 h1 {
-    color: map-get($map: $colores, $key: "color_primario");
+    color: map-get($map: $colores, $key: "color_secundario");
     font-size: 45px;
     border: 1px black solid;
     border-radius: 5px;
     text-align: center;
     margin-top: 1%;
-    background-color: map-get($map: $colores, $key: "color_terciario");
-    animation-name: efectoTitulo;
+    background-color: rgb(80, 80, 85);
+    animation-name: opacidad;
     animation-iteration-count: infinite;
     animation-duration: 3s;
 }
@@ -90,7 +90,7 @@ h2 {
     border-radius: 5px;
     border: 2px solid map-get($map: $colores, $key: "color_secundario");
     padding: 2%;
-    animation-name: efectoEntradas;
+    animation-name: efectoTexto;
     animation-iteration-count: infinite;
     animation-duration: 1s;
     display: flex;
@@ -234,6 +234,12 @@ h2 {
         grid-template-rows: 220px auto 100px;
     }
 
+    h1 {
+        animation-name: opacidad;
+        animation-duration: 2s;
+
+    }
+
     .contacto__formulario {
         width: 100%;
         font-size: 22px;
@@ -299,6 +305,8 @@ h2 {
     .proximasFechas__entradas {
         display: flex;
         max-width: 100%;
+        animation-name: none;
+        background-color: rgba(128, 21, 21, 0.552);
     }
 
     .proximasFechas__fechas {

@@ -1,20 +1,20 @@
 /* Animaciones */
 
-@keyframes efectoTitulo {
+@keyframes opacidad {
     0% {
-        background-color: rgba(245, 222, 179, 0.5)
+      opacity: 0.7;
     }
-    
+
     50% {
-        background-color: rgba(245, 222, 179, 1)
+      opacity: 1;
     }
 
     100% {
-        background-color: rgba(245, 222, 179, 0.5)
-    }
-}
-
-@keyframes efectoEntradas {
+        opacity: 0.7;
+      }
+ }
+ 
+@keyframes efectoTexto {
     0% {
         background-color: rgba(0, 0, 0, 0.5)
     }
@@ -27,3 +27,17 @@
         background-color: rgba(0, 0, 0, 0.5)
     }
 }
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0.5;
+    }
+
+    50% {
+      opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+      }
+ }
