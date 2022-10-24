@@ -255,6 +255,17 @@ h2 {
       color: white; } }
 
 @media screen and (max-width: 480px) {
+  body {
+    background-image: url(../assets/images/wallPrincipal.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "header" "article" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 25% auto 10%; }
   .contacto__formulario {
     width: 100%;
     font-size: 22px;
@@ -267,9 +278,6 @@ h2 {
     width: 100%; }
   .sobreNosotros__historia {
     width: 100%; }
-  body {
-    grid-template-columns: 100%;
-    grid-template-rows: 220px auto 100px; }
   header {
     display: flex;
     flex-direction: column;
@@ -306,8 +314,7 @@ h2 {
     display: flex;
     max-width: 100%; }
   .proximasFechas__fechas {
-    width: 100%;
-    z-index: 1; }
+    width: 100%; }
   .header__logo {
     height: 72px;
     width: 135px; } }
