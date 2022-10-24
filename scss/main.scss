@@ -230,11 +230,12 @@ h2 {
 @media screen and (max-width:480px) {
 
     body {
+        background-image: none;
         background-attachment:fixed;
         background-size:cover;
         background-position: top center;
         width: 100%;
-        max-height: fit-content;
+        max-height: 100%;
         grid-template-columns: 100%;
         grid-template-rows: 220px auto 100px;
     }
