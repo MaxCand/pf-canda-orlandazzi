@@ -3,13 +3,12 @@
 nav ul li {
     list-style: none;
     display: inline;
-}
-
-.header__menu__boton {
-    text-decoration: none;
+    a {
+        text-decoration: none;
     padding: 3px;
     color: map-get($map: $colores, $key: "color_terciario");
     transition: transform .2s;
+    }
 }
 
 .header__logo {

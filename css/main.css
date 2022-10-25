@@ -38,12 +38,11 @@ footer {
 nav ul li {
   list-style: none;
   display: inline; }
-
-.header__menu__boton {
-  text-decoration: none;
-  padding: 3px;
-  color: wheat;
-  transition: transform .2s; }
+  nav ul li a {
+    text-decoration: none;
+    padding: 3px;
+    color: wheat;
+    transition: transform .2s; }
 
 .header__logo {
   height: 80px;
@@ -102,27 +101,26 @@ h2 {
   background-color: rgba(0, 0, 0, 0.5); }
 
 /* Galeria */
+.galeria__seccion {
+  margin-bottom: 16%; }
+
 .galeria__contenedor {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  height: 100%;
   width: 100%;
   max-width: 80%;
   margin-bottom: 2%;
   margin-left: 8%;
-  height: 100%;
   margin-top: 4%; }
-
-.galeria__imagen {
-  height: 320px;
-  width: 350px;
-  transition: transform .2s;
-  border: #121212 10px solid;
-  border-radius: 20px; }
-
-.galeria__seccion {
-  margin-bottom: 16%; }
+  .galeria__contenedor img {
+    height: 320px;
+    width: 360px;
+    transition: transform .2s;
+    border: #121212 10px solid;
+    border-radius: 20px; }
 
 /* Proximas fechas */
 .proximasFechas__fechas {
@@ -166,6 +164,9 @@ h2 {
   margin-top: 3%; }
 
 .contacto__formulario {
+  margin-top: 6%; }
+
+.contacto__formulario__datos {
   background-color: #121212;
   color: white;
   padding: 10px;
@@ -173,9 +174,6 @@ h2 {
   border: 2px solid white;
   width: 40%;
   text-align: center; }
-
-.contacto__flex {
-  margin-top: 6%; }
 
 /* Mensaje formulario */
 .mensajeFormulario {
@@ -232,7 +230,7 @@ h2 {
   .proximasFechas__entradas:hover {
     font-size: 30px;
     transition: all 500ms; }
-  .galeria__imagen:hover {
+  .galeria__contenedor img:hover {
     transform: scale(1.4); }
   nav ul li a:hover {
     background-color: gray;
@@ -249,7 +247,7 @@ h2 {
   body {
     grid-template-columns: 100%;
     grid-template-rows: 220px auto 100px; }
-  .contacto__formulario {
+  .contacto__formulario__datos {
     width: 100%;
     font-size: 22px;
     margin-bottom: 2%; }
@@ -263,19 +261,17 @@ h2 {
     display: flex;
     flex-direction: column;
     padding: 10px; }
-  .header__menu__boton {
+  nav ul li a {
     display: flex;
     justify-content: center;
     font-size: 22px; }
   .galeria__contenedor {
     height: auto;
     width: 100%; }
-  .galeria__imagen {
-    height: auto;
-    width: 100%;
-    border: #121212 10px solid;
-    border-radius: 20px;
-    margin-bottom: 10px; }
+    .galeria__contenedor img {
+      height: auto;
+      width: 100%;
+      margin-bottom: 10px; }
   .boton__irArriba__boton {
     width: 35%;
     padding: 2%;
@@ -291,6 +287,7 @@ h2 {
     height: 72px;
     width: 135px; } }
 
+/* Extras */
 .marginBt-2 {
   margin-bottom: 2%; }
 

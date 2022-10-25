@@ -32,33 +32,31 @@ h2 {
     border: 2px solid map-get($map: $colores, $key: "color_secundario");
     border-radius: 5px;
     margin-top: 3%;
-    background-color: map-get($map: $colores, $key: "fondo_opaco");
+    background-color: map-get($map: $colores, $key: "color_transparencia");
 }
 
 /* Galeria */
+
+.galeria__seccion {
+    margin-bottom: 16%;
+}
 
 .galeria__contenedor {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
+    @include sizes(100%, 100%);
     max-width: 80%;
     margin-bottom: 2%;
     margin-left: 8%;
-    height: 100%;
     margin-top: 4%;
-}
-
-.galeria__imagen {
-    @include sizes(350px, 320px);
+    img {
+        @include sizes(360px, 320px);
     transition: transform .2s;
     border: map-get($map: $colores, $key: "color_primario") 10px solid;
     border-radius: 20px;
-}
-
-.galeria__seccion {
-    margin-bottom: 16%;
+    }
 }
 
 /* Proximas fechas */
@@ -111,6 +109,10 @@ h2 {
 }
 
 .contacto__formulario {
+    margin-top: 6%;
+}
+
+.contacto__formulario__datos {
     background-color: map-get($map: $colores, $key: "color_primario");
     color: map-get($map: $colores, $key: "color_secundario");
     padding: 10px;
@@ -118,10 +120,6 @@ h2 {
     border: 2px solid map-get($map: $colores, $key: "color_secundario");
     width: 40%;
     text-align: center;
-}
-
-.contacto__flex {
-    margin-top: 6%;
 }
 
 /* Mensaje formulario */
@@ -190,7 +188,7 @@ h2 {
         transition: all 500ms;
     }
 
-    .galeria__imagen:hover {
+    .galeria__contenedor img:hover {
         transform: scale(1.4);
     }
 
@@ -216,7 +214,7 @@ h2 {
         grid-template-rows: 220px auto 100px;
     }
 
-    .contacto__formulario {
+    .contacto__formulario__datos {
         width: 100%;
         font-size: 22px;
         margin-bottom: 2%;
@@ -241,7 +239,7 @@ h2 {
 
     }
 
-    .header__menu__boton {
+    nav ul li a {
         display: flex;
         justify-content: center;
         font-size: 22px;
@@ -249,13 +247,10 @@ h2 {
 
     .galeria__contenedor {
         @include sizes(100%, auto);
-    }
-
-    .galeria__imagen {
-        @include sizes(100%, auto);
-        border: map-get($map: $colores, $key: "color_primario") 10px solid;
-        border-radius: 20px;
+        img {
+            @include sizes(100%, auto);
         margin-bottom: 10px;
+        }
     }
 
     .boton__irArriba__boton {
@@ -280,6 +275,8 @@ h2 {
     }
 
 }
+
+/* Extras */
 
 .marginBt-2 {
     margin-bottom: 2%;
