@@ -166,7 +166,6 @@ h2 {
 .sobreNosotros__imagen {
     border: map-get($map: $colores, $key: "color_primario") 10px solid;
     border-radius: 20px;
-    transition: transform .2s;
 }
 
 /* Boton de desplazamiento */
@@ -195,10 +194,6 @@ h2 {
         transform: scale(1.4);
     }
 
-    .sobreNosotros__imagen:hover {
-        transform: scale(1.2);
-    }
-
     nav ul li a:hover {
         background-color: map-get($map: $colores, $key: "color_nav_hover");
         border-radius: 4px;
@@ -221,12 +216,6 @@ h2 {
         grid-template-rows: 220px auto 100px;
     }
 
-    h1 {
-        animation-name: opacidad;
-        animation-duration: 2s;
-
-    }
-
     .contacto__formulario {
         width: 100%;
         font-size: 22px;
@@ -238,8 +227,6 @@ h2 {
     }
 
     .sobreNosotros__imagen {
-        border: map-get($map: $colores, $key: "color_primario") 10px solid;
-        border-radius: 20px;
         width: 100%;
     }
 
@@ -260,16 +247,12 @@ h2 {
     }
 
     .galeria__contenedor {
-        height: auto;
-    }
-
-    .galeria__contenedor {
         @include sizes(100%, auto);
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        max-width: 80%;
+        // max-width: 80%;
         margin-bottom: 2%;
         margin-left: 8%;
         margin-top: 4%;

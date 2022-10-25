@@ -214,8 +214,7 @@ h2 {
 
 .sobreNosotros__imagen {
   border: #121212 10px solid;
-  border-radius: 20px;
-  transition: transform .2s; }
+  border-radius: 20px; }
 
 /* Boton de desplazamiento */
 .boton__irArriba__boton {
@@ -235,8 +234,6 @@ h2 {
     transition: all 500ms; }
   .galeria__imagen:hover {
     transform: scale(1.4); }
-  .sobreNosotros__imagen:hover {
-    transform: scale(1.2); }
   nav ul li a:hover {
     background-color: gray;
     border-radius: 4px;
@@ -252,9 +249,6 @@ h2 {
   body {
     grid-template-columns: 100%;
     grid-template-rows: 220px auto 100px; }
-  h1 {
-    animation-name: opacidad;
-    animation-duration: 2s; }
   .contacto__formulario {
     width: 100%;
     font-size: 22px;
@@ -262,8 +256,6 @@ h2 {
   .mensajeFormulario {
     width: 100%; }
   .sobreNosotros__imagen {
-    border: #121212 10px solid;
-    border-radius: 20px;
     width: 100%; }
   .sobreNosotros__historia {
     width: 100%; }
@@ -276,15 +268,12 @@ h2 {
     justify-content: center;
     font-size: 22px; }
   .galeria__contenedor {
-    height: auto; }
-  .galeria__contenedor {
     height: auto;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 80%;
     margin-bottom: 2%;
     margin-left: 8%;
     margin-top: 4%; }
