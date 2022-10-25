@@ -238,6 +238,7 @@ h2 {
         display: flex;
         flex-direction: column;
         padding: 10px;
+
     }
 
     .header__menu__boton {
@@ -248,19 +249,10 @@ h2 {
 
     .galeria__contenedor {
         @include sizes(100%, auto);
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        // max-width: 80%;
-        margin-bottom: 2%;
-        margin-left: 8%;
-        margin-top: 4%;
     }
 
     .galeria__imagen {
         @include sizes(100%, auto);
-        // transition: transform .2s;
         border: map-get($map: $colores, $key: "color_primario") 10px solid;
         border-radius: 20px;
         margin-bottom: 10px;

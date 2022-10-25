@@ -269,14 +269,7 @@ h2 {
     font-size: 22px; }
   .galeria__contenedor {
     height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 2%;
-    margin-left: 8%;
-    margin-top: 4%; }
+    width: 100%; }
   .galeria__imagen {
     height: auto;
     width: 100%;
