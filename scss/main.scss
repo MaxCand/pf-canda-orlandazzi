@@ -51,11 +51,12 @@ h2 {
     margin-bottom: 2%;
     margin-left: 8%;
     margin-top: 4%;
+
     img {
         @include sizes(360px, 320px);
-    transition: transform .2s;
-    border: map-get($map: $colores, $key: "color_primario") 10px solid;
-    border-radius: 20px;
+        transition: transform .2s;
+        border: map-get($map: $colores, $key: "color_primario") 10px solid;
+        border-radius: 20px;
     }
 }
 
@@ -71,15 +72,11 @@ h2 {
     font-size: 25px;
     @include sizes(50%, 50%);
     margin-top: 4%;
-}
 
-.proximasFechas__fechas ul li {
-    list-style: none;
-    padding: 1%;
-}
-
-.proximasFechas__fechas div {
-    margin-top: 1%;
+    ul li {
+        list-style: none;
+        padding: 1%;
+    }
 }
 
 .proximasFechas__entradas {
@@ -95,22 +92,7 @@ h2 {
     align-items: center;
 }
 
-.listaDeFechas {
-    padding-bottom: 1%;
-}
-
 /* Contacto */
-
-
-.contacto__redes {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 3%;
-}
-
-.contacto__formulario {
-    margin-top: 6%;
-}
 
 .contacto__formulario__datos {
     background-color: map-get($map: $colores, $key: "color_primario");
@@ -146,6 +128,12 @@ h2 {
     align-items: center;
     margin-top: 40px;
     margin-bottom: 20px;
+
+    div img {
+        border: map-get($map: $colores, $key: "color_primario") 10px solid;
+        border-radius: 20px;
+    }
+  
 }
 
 .sobreNosotros__historia {
@@ -161,10 +149,6 @@ h2 {
     margin-bottom: 5px;
 }
 
-.sobreNosotros__imagen {
-    border: map-get($map: $colores, $key: "color_primario") 10px solid;
-    border-radius: 20px;
-}
 
 /* Boton de desplazamiento */
 
@@ -224,7 +208,7 @@ h2 {
         width: 100%;
     }
 
-    .sobreNosotros__imagen {
+    .sobreNosotros__contenido div img {
         width: 100%;
     }
 
@@ -247,9 +231,10 @@ h2 {
 
     .galeria__contenedor {
         @include sizes(100%, auto);
+
         img {
             @include sizes(100%, auto);
-        margin-bottom: 10px;
+            margin-bottom: 10px;
         }
     }
 
@@ -280,6 +265,18 @@ h2 {
 
 .marginBt-2 {
     margin-bottom: 2%;
+}
+
+.marginTop-1 {
+    margin-top: 1%;
+}
+
+.marginTop-6 {
+    margin-top: 6%;
+}
+
+.paddBT-1 {
+    padding-bottom: 1%;
 }
 
 .flex-jc-center {
