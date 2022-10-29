@@ -66,14 +66,6 @@ nav ul li {
   100% {
     background-color: rgba(0, 0, 0, 0.5); } }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0.5; }
-  50% {
-    opacity: 0.7; }
-  100% {
-    opacity: 1; } }
-
 * {
   margin: 0;
   padding: 0;
@@ -200,7 +192,7 @@ h2 {
   margin-bottom: 5px; }
 
 /* Boton de desplazamiento */
-.boton__irArriba__boton {
+.boton__irArriba {
   text-decoration: none;
   text-align: center;
   background-color: #121212;
@@ -239,7 +231,8 @@ h2 {
   .mensajeFormulario {
     width: 100%; }
   .sobreNosotros__contenido div img {
-    width: 100%; }
+    width: 100%;
+    height: 95%; }
   .sobreNosotros__historia {
     width: 100%; }
   header {
@@ -257,7 +250,7 @@ h2 {
       height: auto;
       width: 100%;
       margin-bottom: 10px; }
-  .boton__irArriba__boton {
+  .boton__irArriba {
     width: 35%;
     padding: 2%;
     margin-bottom: 3%; }

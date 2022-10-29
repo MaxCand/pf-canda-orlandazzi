@@ -133,7 +133,7 @@ h2 {
         border: map-get($map: $colores, $key: "color_primario") 10px solid;
         border-radius: 20px;
     }
-  
+
 }
 
 .sobreNosotros__historia {
@@ -152,7 +152,7 @@ h2 {
 
 /* Boton de desplazamiento */
 
-.boton__irArriba__boton {
+.boton__irArriba {
     text-decoration: none;
     text-align: center;
     background-color: map-get($map: $colores, $key: "color_primario");
@@ -210,6 +210,7 @@ h2 {
 
     .sobreNosotros__contenido div img {
         width: 100%;
+        height: 95%;
     }
 
     .sobreNosotros__historia {
@@ -238,7 +239,7 @@ h2 {
         }
     }
 
-    .boton__irArriba__boton {
+    .boton__irArriba {
         width: 35%;
         padding: 2%;
         margin-bottom: 3%;

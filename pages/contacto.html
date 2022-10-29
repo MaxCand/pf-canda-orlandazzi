@@ -13,11 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/images/favicon.png">
-
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
@@ -58,14 +54,14 @@
                             <div>
                                 <label for="first_name">Nombre:</label>
                             </div>
-                            <input type="text" id="first_name" name="first_name">
+                            <input type="text" id="first_name" name="first_name" required id="first_name">
                         </div>
                         <!-- Apellido -->
                         <div class="marginBt-2">
                             <div>
                                 <label for="last_name">Apellido:</label>
                             </div>
-                            <input type="text" id="last_name" name="last_name">
+                            <input type="text" id="last_name" name="last_name" required id="last_name">
                         </div>
                         <!-- Email -->
                         <div class="marginBt-2">
@@ -79,7 +75,8 @@
                             <div>
                                 <label for="mensaje">Escriba un mensaje:</label>
                             </div>
-                            <textarea name="mensaje" id="mensaje" cols="20" rows="5"></textarea>
+                            <textarea name="mensaje" id="mensaje" required id="mensaje"
+                                placeholder="Deje su mensaje aquí" cols="20" rows="5"></textarea>
                         </div>
                         <!-- Enviar -->
                         <div>
